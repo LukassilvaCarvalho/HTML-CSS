@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
     <title>mr005</title>
 </head>
 <body>
     <header>
         <h1>meu site</h1>
-        <menu>
+        <span id="burgue" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="menu">
             <ul>
                 <li><a href="#">Opcao01</a></li>
                 <li><a href="#">Opcao02</a></li>
@@ -30,5 +32,14 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam debitis totam excepturi molestias tempore, repudiandae possimus deleniti? Totam, placeat distinctio. Repellat id doloribus unde doloremque autem expedita eaque distinctio vel! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum atque eaque doloremque numquam tempore quaerat itaque vero, assumenda, repellendus unde totam ex possimus quia odit delectus blanditiis dicta fugiat molestias. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cum nesciunt nobis fugit nisi at placeat animi sed non beatae. Ipsa deserunt iure delectus, tempora nesciunt amet tenetur consequuntur obcaecati.</p>
         </article>
     </main>
+  <script>
+    function clickMenu(){
+       if (menu.style.display == 'block') {
+        menu.style.display = 'none'
+       } else{
+        menu.style.display = 'block'
+       }
+    }
+  </script>
 </body>
 </html>

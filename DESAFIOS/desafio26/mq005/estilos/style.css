@@ -16,7 +16,7 @@ header > h1{
     text-align: center;
 }
 menu{
-    display: block;
+    display: none;
 }
 menu > ul{
     list-style-type: none;
@@ -29,7 +29,18 @@ menu a{
     background-color: rgb(77, 76, 76);
     border-top: 2px solid black;
 }
-
+span#burgue{
+    background-color: rgb(29, 29, 29);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+}
+span#burgue:hover {
+    background-color:white;
+    color: black;
+}
 menu > ul > li > a:hover {
     background-color: gray;
 }
